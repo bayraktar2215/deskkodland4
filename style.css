@@ -1,1 +1,95 @@
+@keyframes rainbowcolor-change {
+    0% {
+        font-size: 11px;
+        color: red;
+    }
+    20%{
+        color: yellow;
+        font-size: 12px;
+    }
+    40% {
+         color: green;
+         font-size: 13px;
+    }
+    60%{
+        color: blue;
+        font-size: 14px;
+    }
+    80%{
+        color: navy;
+        font-size: 13px;
+
+    }
+    100% {
+        color: purple;
+        font-size: 12px;
+    }
+}
+
+
+@keyframes imegineAnimation {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+li{
+    animation: rainbowcolor-change 3s infinite;
+
+} 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Yazı tipi ailesi */
+    font-size: 11px; /* <p></p> etiketindeki ana yazının boyutu */
+    background-color: #FFFFFF; /* Web sayfasının arka plan rengi */
+    color: #333333; /* Metin rengi */
+    
+}
+h1:hover { animation: color-change 3s infinite; }
+h1 {
+    color: #00a800; /* Başlık rengi */
+    font-size: 24px; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+    font-size:25px;
+    
+    
+}
+h2 {
+    color: #5988FF; /* Başlık rengi */
+    font-size: 5mm; /* Başlık yazı tipi boyutu */
+    font-family: Georgia, serif; /* Başlıkta kullanılan yazı tipi ailesi */
+    background-color: #D6FF6B;
+    text-decoration-color: #FFFFFF;
+    border: #FD98FB;
+    
+    
+}
+
+
+img{
+    animation: imegineAnimation 3s infinite; 
+    z-index: -1;
+}
 
